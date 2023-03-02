@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Credit card </title>
+  <link rel="stylesheet" href="billing%20card%20v2.css">
+</head>
+<body>
+<div class="contenedor">
+
+  <section class="tarjeta" id="tarjeta">
+    <div class="delantra">
+      <div class="logo-marca" id="logo-marca">
+        <img src="" alt="">
+      </div>
+      <img src="" alt="">
+      <div class="datos">
+        <div class="grupo" id="numero">
+          <p class="label">Numero Tarjeta</p>
+          <p class="numero">#### #### #### ####</p>
+        </div>
+        <div class="flexbox">
+          <div class="grupo" id="nombre">
+            <p class="label">Nobre Tarjeta</p>
+            <p class="nombre">Tomasz Kolor</p>
+          </div>
+          <div class="grupo" id="expiraction">
+            <p class="label">Expiraction</p>
+            <p class="expiraction"><span class="mes">MM</span> / <span class="year">YY</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trasera">
+      <div class="barra-magnetica"></div>
+      <div class="datos">
+        <div class="grupo" id="firma">
+          <p class="label">Firma</p>
+          <div class="firma"><p></p></div>
+        </div>
+        <div class="grupo" id="cvv">
+          <p class="label">CCV</p>
+          <p class="ccv"></p>
+        </div>
+      </div>
+      <!-- Jakiś pierdolnik leyenda nie dane -->
+    </div>
+  </section>
+
+  <div class="contenedor-btn">
+    <button class="btn-abrib-formulario" id="btn-abrib-formulario">
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
+
+  <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+    <div class="grupo">
+      <label for="inputNumero">Numero Tarjeta</label>
+      <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+    </div>
+    <div class="grupo">
+      <label for="inputNombre">Numbre</label>
+      <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+    </div>
+    <div class="flexbox">
+      <div class="grupo expira">
+        <label for="selectMes">Expiracion</label>
+        <div class="flexbox">
+          <div class="grupo-select">
+            <select name="mes" id="selectMes">
+              <option disabled selected>Ano</option>
+            </select>
+            <i class="fas-fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo ccv">
+        <label  for="inputCCV">CCV</label>
+        <input type="text" id="inputCCV" maxlength="3">
+      </div>
+    </div>
+    <button type="submit" class="btn-enviar">Enviar</button>
+  </form>
+</div>
+
+<!-- 2 scrypty na pozniej SCRIPT -->
+</body>
+</html>
